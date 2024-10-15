@@ -1,6 +1,5 @@
 import { Component, inject, Input, OnDestroy, OnInit } from '@angular/core';
 import { MainService, Task } from '../../service/main.service';
-import { ExportPdfService } from '../../service/export-pdf.service';
 
 @Component({
   selector: 'app-task',
@@ -13,7 +12,6 @@ export class TaskComponent {
 
   @Input() task: Task | undefined;
   private _taskService = inject(MainService);
-  private _pdfService = inject(ExportPdfService);
 
 
 
@@ -29,9 +27,6 @@ export class TaskComponent {
     }
   }
 
-  exportPdf(){
-    this._pdfService.exportAsPDF();
-  }
 
 
 

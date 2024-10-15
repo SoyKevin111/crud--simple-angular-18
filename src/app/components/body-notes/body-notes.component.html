@@ -6,6 +6,9 @@
 			}
 		</ul>
 	</div>
+	<div class="ml-auto">
+		<button (click)="exportPdf()" class="bg-yellow-500 py-1 rounded-md px-3  text-white">Export to pdf</button>
+	</div>
 	<div class="w-full h-[150px] border_random ">
 		<form (ngSubmit)="onSubmit()" class="h-full flex gap-4 p-5 items-center justify-between">
 			<div class="inputTask w-[65%]">
