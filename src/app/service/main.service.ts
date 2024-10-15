@@ -16,6 +16,10 @@ export class MainService {
     { id: '1', name: 'tarea n1' },
     { id: '2', name: 'tarea n2' },
     { id: '3', name: 'tarea n3' },
+    { id: '4', name: 'tarea n4' },
+    { id: '5', name: 'tarea n5' },
+    { id: '6', name: 'tarea n6' },
+    { id: '7', name: 'tarea n7' },
   ]);
   private taskEditingSubject = new BehaviorSubject<Task | undefined>(undefined);
 

@@ -4,6 +4,7 @@ import { MainService, Task } from '../../service/main.service';
 import { Subject, takeUntil, tap } from 'rxjs';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ExportPdfService } from '../../service/export-pdf.service';
 
 @Component({
   selector: 'app-body-notes',
@@ -16,6 +17,7 @@ export class BodyNotesComponent implements OnInit, OnDestroy {
 
   private destroy$ = new Subject<void>();
   private _taskService = inject(MainService);
+  private _exportPdfService = inject(ExportPdfService);
 
   nameTask: string = '';
 
@@ -44,6 +46,10 @@ export class BodyNotesComponent implements OnInit, OnDestroy {
       })
 
 
+  }
+
+  exportPdf() {
+    this._exportPdfService.exportAsPDF();
   }
 
   addTask() {

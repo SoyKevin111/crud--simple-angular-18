@@ -1,6 +1,5 @@
 import { Component, inject, Input, OnDestroy, OnInit } from '@angular/core';
 import { MainService, Task } from '../../service/main.service';
-import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-task',
@@ -27,6 +26,7 @@ export class TaskComponent {
       this._taskService.setTaskEditing(this.task);
     }
   }
+
 
 
 
