@@ -2,8 +2,8 @@
 
 CRUD SIMPLE
 
-![imagen](./public/img/version/imagen_1.png)
-![imagen](./public/img/version/imagen_2.png)
+![imagen](./public/img/version/imagen_3.png)
+![imagen](./public/img/version/imagen_4.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
 
